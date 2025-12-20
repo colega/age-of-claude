@@ -1,0 +1,11 @@
+{
+  "name": "age-of-claude",
+  "version": "1.0.0",
+  "description": "Age of Empires sound effects for Claude Code lifecycle events",
+  "author": {
+    "name": "Kyle Snow Schwartz"
+  },
+  "homepage": "https://github.com/kylesnowschwartz/age-of-claude",
+  "repository": "https://github.com/kylesnowschwartz/age-of-claude",
+  "license": "MIT"
+}

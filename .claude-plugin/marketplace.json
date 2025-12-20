@@ -1,0 +1,34 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "age-of-claude",
+  "version": "1.0.0",
+  "description": "Age of Empires sound effects for Claude Code - wololo your way through coding sessions",
+  "owner": {
+    "name": "Kyle Snow Schwartz",
+    "url": "https://github.com/kylesnowschwartz"
+  },
+  "plugins": [
+    {
+      "name": "age-of-claude",
+      "description": "Age of Empires sound effects for Claude Code events - wololo your way through coding sessions",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kyle Snow Schwartz"
+      },
+      "source": "./age-of-claude-plugin",
+      "homepage": "https://github.com/kylesnowschwartz/age-of-claude",
+      "repository": "https://github.com/kylesnowschwartz/age-of-claude",
+      "license": "MIT",
+      "category": "fun",
+      "keywords": [
+        "sounds",
+        "age-of-empires",
+        "notifications",
+        "audio",
+        "fun",
+        "claude-code",
+        "wololo"
+      ]
+    }
+  ]
+}
