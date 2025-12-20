@@ -60,3 +60,7 @@ echo "SOUND_MODE=aoe" > ~/.config/claude/sounds.conf
 ## Vendored Dependencies
 
 The `claude_hooks` gem is vendored at `vendor/claude_hooks/` - no gem installation required. This is necessary because Claude Code's plugin cache copies plugins individually, breaking shared dependencies.
+
+## References
+
+Check .cloned-sources for references

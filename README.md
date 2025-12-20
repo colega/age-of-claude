@@ -58,6 +58,8 @@ echo "SOUND_MODE=aoe" > ~/.config/claude/sounds.conf
 
 Inspired by [aliparoya/age-of-claude](https://github.com/aliparoya/age-of-claude).
 
+Sound effects from Age of Empires II by Ensemble Studios/Microsoft.
+
 ## License
 
 MIT
