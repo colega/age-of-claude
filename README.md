@@ -32,27 +32,31 @@ Plays Age of Empires II sound effects during Claude Code events:
 
 46 authentic AoE II sound files included.
 
-## Configuration
+## Enabling Sounds
 
-If you're also using `sc-hooks` from SimpleClaude, you can switch between sound modes:
+Sounds are disabled by default. Use the included command to toggle:
 
 ```bash
-# Age of Empires sounds (this plugin)
-/sc-hooks:sc-sounds aoe
-
-# macOS notification sounds (sc-hooks)
-/sc-hooks:sc-sounds glass
-
-# Disable all sounds
-/sc-hooks:sc-sounds off
+/age-of-claude:sounds on    # Enable AoE sounds
+/age-of-claude:sounds off   # Disable sounds
+/age-of-claude:sounds       # Check current state
 ```
 
-Config file: `~/.config/claude/sounds.conf`
+Or manually:
+
+```bash
+mkdir -p ~/.config/claude
+echo "SOUND_MODE=aoe" > ~/.config/claude/sounds.conf
+```
 
 ## Requirements
 
 - macOS (uses `afplay` for audio playback)
 - Ruby (for hook execution)
+
+## Acknowledgments
+
+Inspired by [aliparoya/age-of-claude](https://github.com/aliparoya/age-of-claude).
 
 ## License
 
