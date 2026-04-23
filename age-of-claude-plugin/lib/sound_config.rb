@@ -49,5 +49,21 @@ module SoundConfig
     def off?
       mode == 'off'
     end
+
+    def disabled_hooks
+      return [] unless File.exist?(CONFIG_PATH)
+
+      content = File.read(CONFIG_PATH)
+      match = content.match(/^DISABLED_HOOKS=(.+)/i)
+      return [] unless match
+
+      match[1].split(',').map(&:strip).map(&:downcase)
+    rescue StandardError
+      []
+    end
+
+    def hook_disabled?(hook_type)
+      disabled_hooks.include?(hook_type.to_s.downcase)
+    end
   end
 end

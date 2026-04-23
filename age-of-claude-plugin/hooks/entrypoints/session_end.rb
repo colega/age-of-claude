@@ -4,6 +4,12 @@
 # Age of Claude - SessionEnd entrypoint
 # Plays farewell sounds when Claude session ends
 
+require_relative '../../lib/sound_config'
+if SoundConfig.hook_disabled?('SessionEnd')
+  puts '{"continue":true,"stopReason":"","suppressOutput":true}'
+  exit 0
+end
+
 # Add shared vendor to load path for claude_hooks gem
 vendor_path = File.expand_path('../../vendor/claude_hooks/lib', __dir__)
 $LOAD_PATH.unshift(vendor_path) unless $LOAD_PATH.include?(vendor_path)
